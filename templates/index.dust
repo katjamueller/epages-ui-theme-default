@@ -1,7 +1,31 @@
 {>"layout"/}
 
 {<content}
-  <h1>Welcome to the <em>{shop.title}</em> shop</h1>
-  <hr />
-  {@content/}
+  <section>
+    {@plugin type="epages.text" id="welcome-text"/}
+    <hr />
+    {@plugin type="epages.image" id="category-hero-image"/}
+  </section>
+  <section>
+    <article>
+      <header>
+        {@plugin type="epages.text" id="text-article-1"/}
+      </header>
+      {@plugin type="epages.image" id="image-article-1"/}
+    </article>
+
+    <article>
+      <header>
+        {@plugin type="epages.text" id="text-article-2"/}
+      </header>
+      {@plugin type="epages.image" id="image-article-2"/}
+    </article>
+
+    <article>
+      <header>
+        {@plugin type="epages.text" id="text-article-3"/}
+      </header>
+      {@plugin type="epages.image" id="image-article-3"/}
+    </article>
+  </section>
 {/content}

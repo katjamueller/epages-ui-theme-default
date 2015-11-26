@@ -26,13 +26,6 @@
     </div>
   </div>
 
-
-  <div class="hero-image">
-    {@plugin type="epages.image" id="category-hero-image"/}
-  </div>
-
-
-
   <div class="category-product-grid">
   {?products}
     <ul class="list-category list-unstyled list-grid-2 list-grid-medium-3 list-grid-large-4">

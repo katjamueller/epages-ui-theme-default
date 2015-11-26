@@ -6,26 +6,34 @@
     <hr />
     {@plugin type="epages.image" id="category-hero-image"/}
   </section>
+
+
   <section>
-    <article>
-      <header>
-        {@plugin type="epages.text" id="text-article-1"/}
-      </header>
-      {@plugin type="epages.image" id="image-article-1"/}
-    </article>
 
-    <article>
-      <header>
-        {@plugin type="epages.text" id="text-article-2"/}
-      </header>
-      {@plugin type="epages.image" id="image-article-2"/}
-    </article>
+    <div class="dali-grid">
+      <div class="dali-grid-row">
+        <article class="dali-grid-column">
+          <header>
+            {@plugin type="epages.text" id="text-article-1"/}
+          </header>
+          {@plugin type="epages.image" id="image-article-1"/}
+        </article>
 
-    <article>
-      <header>
-        {@plugin type="epages.text" id="text-article-3"/}
-      </header>
-      {@plugin type="epages.image" id="image-article-3"/}
-    </article>
+        <article class="dali-grid-column">
+          <header>
+            {@plugin type="epages.text" id="text-article-2"/}
+          </header>
+          {@plugin type="epages.image" id="image-article-2"/}
+        </article>
+
+        <article class="dali-grid-column">
+          <header>
+            {@plugin type="epages.text" id="text-article-3"/}
+          </header>
+          {@plugin type="epages.image" id="image-article-3"/}
+        </article>
+      </div>
+    </div>
+
   </section>
 {/content}

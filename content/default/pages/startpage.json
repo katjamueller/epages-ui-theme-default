@@ -7,7 +7,7 @@
       "id": "welcome-text",
       "type": "epages.text",
       "data": {
-        "content": "<p>Welcome to the Spotlight shop</p>"
+        "content": "<h1>Welcome to the Spotlight shop</h1>"
       }
     },
     {

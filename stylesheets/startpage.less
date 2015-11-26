@@ -1,0 +1,56 @@
+.startpage {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: space-between;
+
+  &-header {
+    margin-bottom: 40px;
+  }
+
+  &-offer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 0;
+      margin-bottom: 40px;
+      margin-right: 30px;
+
+      @media (max-width: @screen-md) {
+        display: block;
+        flex: 1 0 47%;
+      }
+
+      @media (max-width: @screen-sm) {
+        display: block;
+        flex: 1 0 100%;
+      }
+
+      &:nth-child(2) {
+        @media (max-width: @screen-md) {
+          margin-right: 0;
+        }
+
+        @media (max-width: @screen-sm) {
+          margin-right: 0;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+        @media (max-width: @screen-sm) {
+          margin-bottom: 0;
+        }
+      }
+
+      header {
+        margin-bottom: 20px; // Quick fix for distance to the image, headline margin should solve this problem
+      }
+    }
+  }
+}

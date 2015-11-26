@@ -1,39 +1,33 @@
 {>"layout"/}
 
 {<content}
-  <section>
-    {@plugin type="epages.text" id="welcome-text"/}
-    <hr />
-    {@plugin type="epages.image" id="category-hero-image"/}
-  </section>
+  <section class="startpage">
+    <header class="startpage-header">
+      {@plugin type="epages.image" id="category-hero-image"/}
+    </header>
 
 
-  <section>
-
-    <div class="dali-grid">
-      <div class="dali-grid-row">
-        <article class="dali-grid-column">
+    <section class="startpage-offer">
+        <article class="startpage-offer-column">
           <header>
             {@plugin type="epages.text" id="text-article-1"/}
           </header>
           {@plugin type="epages.image" id="image-article-1"/}
         </article>
 
-        <article class="dali-grid-column">
+        <article class="startpage-offer-column">
           <header>
             {@plugin type="epages.text" id="text-article-2"/}
           </header>
           {@plugin type="epages.image" id="image-article-2"/}
         </article>
 
-        <article class="dali-grid-column">
+        <article class="startpage-offer-column">
           <header>
             {@plugin type="epages.text" id="text-article-3"/}
           </header>
           {@plugin type="epages.image" id="image-article-3"/}
         </article>
-      </div>
-    </div>
-
+    </section>
   </section>
 {/content}

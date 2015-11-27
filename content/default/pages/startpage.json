@@ -4,10 +4,30 @@
   "title": "Home",
   "elements": [
     {
+      "id": "category-hero-image",
+      "type": "epages.image",
+      "data": {
+        "src": "{images.home-start}",
+        "alt": "",
+        "link": "",
+        "opentab": false
+      }
+    },
+    {
       "id": "text-article-1",
       "type": "epages.text",
       "data": {
         "content": "<p>New products</p><h3>Warm Cloves</h3>"
+      }
+    },
+    {
+      "id": "image-article-1",
+      "type": "epages.image",
+      "data": {
+        "src": "{images.prod-cloves}",
+        "alt": "Cloves",
+        "link": "",
+        "opentab": false
       }
     },
     {
@@ -18,10 +38,30 @@
       }
     },
     {
+      "id": "image-article-2",
+      "type": "epages.image",
+      "data": {
+        "src": "{images.prod-man}",
+        "alt": "For men",
+        "link": "",
+        "opentab": false
+      }
+    },
+    {
       "id": "text-article-3",
       "type": "epages.text",
       "data": {
         "content": "<p>Special offers</p><h3>Colourful scarves"
+      }
+    },
+    {
+      "id": "image-article-3",
+      "type": "epages.image",
+      "data": {
+        "src": "{images.prod-scarves}",
+        "alt": "Scarves",
+        "link": "",
+        "opentab": false
       }
     }
   ]

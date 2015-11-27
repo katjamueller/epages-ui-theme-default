@@ -4,13 +4,6 @@
   "title": "Home",
   "elements": [
     {
-      "id": "welcome-text",
-      "type": "epages.text",
-      "data": {
-        "content": "<h1>Welcome to the Spotlight shop</h1>"
-      }
-    },
-    {
       "id": "text-article-1",
       "type": "epages.text",
       "data": {

@@ -2,6 +2,7 @@
 
 {<content}
   <section class="startpage">
+
     <header class="startpage-header">
       {@plugin type="epages.image" id="image-header-start"/}
     </header>

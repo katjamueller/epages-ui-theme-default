@@ -1,8 +1,12 @@
 {>"layout"/}
 
 {<content}
+
   <section class="category">
     <h1>{category.title}</h1>
+  {@plugin type="epages.image" id="category"/}
+
+  <h1>{category.title}</h1>
 
     <div class="product-list-display-top">
       <div class="product-list-sorting">

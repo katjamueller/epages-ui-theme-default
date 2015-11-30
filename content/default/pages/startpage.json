@@ -4,7 +4,7 @@
   "title": "Home",
   "elements": [
     {
-      "id": "image-header-start",
+      "id": "header-image-start",
       "type": "epages.image",
       "data": {
         "src": "{images.home-start}",
@@ -14,14 +14,14 @@
       }
     },
     {
-      "id": "text-article-1",
+      "id": "article-text-1",
       "type": "epages.text",
       "data": {
         "content": "<p>New products</p><h3>Warm Gloves</h3>"
       }
     },
     {
-      "id": "image-article-1",
+      "id": "article-image-1",
       "type": "epages.image",
       "data": {
         "src": "{images.prod-gloves}",
@@ -31,14 +31,14 @@
       }
     },
     {
-      "id": "text-article-2",
+      "id": "article-text-2",
       "type": "epages.text",
       "data": {
         "content": "<p>New fashion</p><h3>For man</h3>"
       }
     },
     {
-      "id": "image-article-2",
+      "id": "article-image-2",
       "type": "epages.image",
       "data": {
         "src": "{images.prod-man}",
@@ -48,14 +48,14 @@
       }
     },
     {
-      "id": "text-article-3",
+      "id": "article-text-3",
       "type": "epages.text",
       "data": {
         "content": "<p>Special offers</p><h3>Colourful scarves</h3>"
       }
     },
     {
-      "id": "image-article-3",
+      "id": "article-image-3",
       "type": "epages.image",
       "data": {
         "src": "{images.prod-scarves}",
@@ -65,14 +65,14 @@
       }
     },
     {
-      "id": "text-article-4",
+      "id": "article-text-4",
       "type": "epages.text",
       "data": {
         "content": "<h2>About</h2><p>Spotlight is a powerful and clean theme – carefully tuned for mobile, tablet, and retina devices. Spotlight allows your products to shine with a clean minimal design, while giving your customers a great experience on any device.</p><p>This is nonsense demo text. Artisan reprehenderit butcher Tumblr seitan. Distillery nesciunt Banksy master cleanse kale chips. Exercitation accusamus in, kale chips synth Marfa bitters voluptate eiusmod four dollar toast fixie retro church-key. Sunt next level duis Kickstarter, tilde et Bushwick vero anim health goth. Pug bicycle rights excepteur cardigan street art, before they sold out post-ironic Truffaut tousled.</p>"
       }
     },
     {
-      "id": "image-article-4",
+      "id": "article-image-4",
       "type": "epages.image",
       "data": {
         "src": "{images.about}",

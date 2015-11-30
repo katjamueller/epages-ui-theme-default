@@ -4,39 +4,39 @@
   <section class="startpage">
 
     <header class="startpage-header">
-      {@plugin type="epages.image" id="image-header-start"/}
+      {@plugin type="epages.image" id="header-image-start"/}
     </header>
 
 
     <section class="startpage-offer">
       <article class="startpage-offer-column">
         <header>
-          {@plugin type="epages.text" id="text-article-1"/}
+          {@plugin type="epages.text" id="article-text-1"/}
         </header>
-        {@plugin type="epages.image" id="image-article-1"/}
+        {@plugin type="epages.image" id="article-image-1"/}
       </article>
 
       <article class="startpage-offer-column">
         <header>
-          {@plugin type="epages.text" id="text-article-2"/}
+          {@plugin type="epages.text" id="article-text-2"/}
         </header>
-        {@plugin type="epages.image" id="image-article-2"/}
+        {@plugin type="epages.image" id="article-image-2"/}
       </article>
 
       <article class="startpage-offer-column">
         <header>
-          {@plugin type="epages.text" id="text-article-3"/}
+          {@plugin type="epages.text" id="article-text-3"/}
         </header>
-        {@plugin type="epages.image" id="image-article-3"/}
+        {@plugin type="epages.image" id="article-image-3"/}
       </article>
     </section>
 
     <section class="startpage-about">
       <article class="startpage-about-column">
         <header class="startpage-about-column-header">
-          {@plugin type="epages.text" id="text-article-4"/}
+          {@plugin type="epages.text" id="article-text-4"/}
         </header>
-        {@plugin type="epages.image" id="image-article-4"/}
+        {@plugin type="epages.image" id="article-image-4"/}
       </article>
     </section>
 

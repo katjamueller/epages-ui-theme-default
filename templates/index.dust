@@ -3,31 +3,41 @@
 {<content}
   <section class="startpage">
     <header class="startpage-header">
-      {@plugin type="epages.image" id="category-hero-image"/}
+      {@plugin type="epages.image" id="image-header-start"/}
     </header>
 
 
     <section class="startpage-offer">
-        <article class="startpage-offer-column">
-          <header>
-            {@plugin type="epages.text" id="text-article-1"/}
-          </header>
-          {@plugin type="epages.image" id="image-article-1"/}
-        </article>
+      <article class="startpage-offer-column">
+        <header>
+          {@plugin type="epages.text" id="text-article-1"/}
+        </header>
+        {@plugin type="epages.image" id="image-article-1"/}
+      </article>
 
-        <article class="startpage-offer-column">
-          <header>
-            {@plugin type="epages.text" id="text-article-2"/}
-          </header>
-          {@plugin type="epages.image" id="image-article-2"/}
-        </article>
+      <article class="startpage-offer-column">
+        <header>
+          {@plugin type="epages.text" id="text-article-2"/}
+        </header>
+        {@plugin type="epages.image" id="image-article-2"/}
+      </article>
 
-        <article class="startpage-offer-column">
-          <header>
-            {@plugin type="epages.text" id="text-article-3"/}
-          </header>
-          {@plugin type="epages.image" id="image-article-3"/}
-        </article>
+      <article class="startpage-offer-column">
+        <header>
+          {@plugin type="epages.text" id="text-article-3"/}
+        </header>
+        {@plugin type="epages.image" id="image-article-3"/}
+      </article>
     </section>
+
+    <section class="startpage-about">
+      <article class="startpage-about-column">
+        <header class="startpage-about-column-header">
+          {@plugin type="epages.text" id="text-article-4"/}
+        </header>
+        {@plugin type="epages.image" id="image-article-4"/}
+      </article>
+    </section>
+
   </section>
 {/content}

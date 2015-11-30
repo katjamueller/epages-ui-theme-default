@@ -44,16 +44,16 @@
   <main class="main">
   {+content/}
   </main>
-  <footer class="footer" style="padding: 20px; height: 100px;">
-      <ul class="list-unstyled" style="text-align: center;">
-          <li style="display: inline; text-align: center; margin: 20px;">
-              <a>Test</a>
+  <footer class="footer">
+      <ul class="footer-list">
+          <li class="footer-list-item">
+              <a class="footer-list-item-link">Test</a>
           </li>
-          <li style="display: inline; text-align: center; margin: 20px;">
-              <a>Test</a>
+          <li class="footer-list-item">
+              <a class="footer-list-item-link">Test</a>
           </li>
-          <li style="display: inline; text-align: center; margin: 20px;">
-              <a>Test</a>
+          <li class="footer-list-item">
+              <a class="footer-list-item-link">Test</a>
           </li>
       </ul>
   </footer>

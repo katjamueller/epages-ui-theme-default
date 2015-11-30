@@ -349,5 +349,35 @@
 }
 
 .footer {
-  background-color: lighten(@brand-secondary, 50%);
+  display: flex;
+  flex-flow: row;
+  background-color: lighten(@brand-secondary, 70%);
+  padding: 20px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+
+  &-list {
+    .list-unstyled;
+
+    &-item {
+      display: inline;
+
+      &::after {
+        content: '/';
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      &-link {
+        color: @brand-text;
+      }
+
+      &:last-child {
+        &::after {
+          content: normal;
+        }
+      }
+    }
+  }
 }

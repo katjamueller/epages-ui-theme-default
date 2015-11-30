@@ -3,7 +3,8 @@
     "pages": [
       "content/default/pages/startpage.json",
       "content/default/pages/aboutme.json",
-      "content/default/pages/contact.json"
+      "content/default/pages/contact.json",
+      "content/default/pages/category.json"
     ],
     "images": {
       "cat1": "content/default/images/category-teaser-image-1.jpg",

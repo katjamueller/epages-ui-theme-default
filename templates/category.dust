@@ -3,9 +3,11 @@
 {<content}
 
   <section class="category">
-  {@plugin type="epages.image" id="category"/}
+    <section classs="category-banner">
+      {@plugin type="epages.image" id="category"/}
+    </section>
 
-  <h1>{category.title}</h1>
+    <h1>{category.title}</h1>
 
     <div class="product-list-display-top">
       <div class="product-list-sorting">
@@ -57,8 +59,6 @@
     {/products}
     </div>
 
-
-
     {?category.subCategories}
     <h4>Further categories</h4>
     <ul class="list-category list-unstyled list-grid-2 list-grid-medium-3 list-grid-large-4">
@@ -72,10 +72,7 @@
     </ul>
     {/category.subCategories}
 
-
-
     {@plugin type="epages.text" id="category-description"/}
-
 
     <div class="product-list-display-bottom">
       <div class="product-list-pagination">

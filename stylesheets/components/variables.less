@@ -6,12 +6,6 @@
 @brand-white:                       rgb(255, 255, 255);
 
 //
-// Navigation
-@navigation-background-item-active: rgb(234, 230, 227);
-@navigation-background-item-hover:  @navigation-background-item-active;
-@navigation-border:                 @brand-text;
-
-//
 // Font
 @font-family:                       "Karma", serif;
 @font-size:                         17px;
@@ -21,6 +15,12 @@
 // Dimensions
 @base-padding:                      10px;
 @base-margin:                       20px;
+
+//
+// Navigation
+@navigation-background-item-active: rgb(234, 230, 227);
+@navigation-background-item-hover:  @navigation-background-item-active;
+@navigation-border:                 @brand-text;
 
 //
 // Z-index stack
@@ -48,6 +48,10 @@
 @global-text-color:                 @brand-text;
 @global-link-color:                 @brand-primary;
 @global-link-hover-color:           darken(@brand-primary, 10%);
+@footer-background-color:           @navigation-background-item-active;
+
+// Paging
+@paging-background-color:           @footer-background-color;
 
 
 //
@@ -55,13 +59,12 @@
 
 // Font
 @font-size-base:                    @font-size;
-
-@font-size-h1:                      floor((@font-size-base * 2.9));   // ~49px
-@font-size-h2:                      floor((@font-size-base * 2.4));   // ~40px
-@font-size-h3:                      ceil((@font-size-base * 1.6));    // ~24px
-@font-size-h4:                      ceil((@font-size-base * 1.2));    // ~18px
-@font-size-h5:                      ceil((@font-size-base * 0.9));    // ~14px
-@font-size-h6:                      ceil((@font-size-base * 0.8));    // ~12px
+@font-size-h1:                      floor((@font-size-base * 2.5));   // ~42px
+@font-size-h2:                      floor((@font-size-base * 1.9));   // ~32px   10
+@font-size-h3:                      ceil((@font-size-base * 1.4));    // ~24px   8
+@font-size-h4:                      ceil((@font-size-base * 1.2));    // ~18px   6
+@font-size-h5:                      ceil((@font-size-base * 0.9));    // ~14px   4
+@font-size-h6:                      ceil((@font-size-base * 0.8));    // ~12px   2
 
 // Heading
 @headings-font-family:              inherit;

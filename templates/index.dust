@@ -30,7 +30,7 @@
     </section>
 
     <section class="startpage-feature-products">
-      <ul class="list-category list-unstyled list-grid-2 list-grid-medium-3 list-grid-large-4">
+      <ul class="list-category list-grid-2 list-grid-medium-3 list-grid-large-4">
       {#products}
         <li>
           <a href="{href}">

@@ -1,6 +1,7 @@
 {>"layout"/}
 
 {<content}
+
   <section class="search">
     {?products.queryString}
       <h1>Search results for "{products.queryString}"</h1>
@@ -34,51 +35,47 @@
     </div>
     {/products}
 
-    <div class="row">
-      <div class="col-12">
-        <div class="category-product-grid">
-        {?products}
-          <ul class="list-category list-unstyled list-grid-2 list-grid-medium-3 list-grid-large-4">
-          {#products}
-            <li>
-              <a href="{href}">
-                <div class="center-image-container">
-                  <img class="product-image" src="{image.url}" alt="{title}" />
-                </div>
-                <h2 class="product-title">{title}</h2>
-                <h3 class="product-price">{price}</h3>
-              </a>
-            </li>
-          {/products}
-          </ul>
-        {:else}
-        <div class="search-no-result">
-          <div class="search-no-result-form">
-            <h2 class="search-no-result-form-headline">Your search did not produce any matches.</h2>
-            <form class="search-form" method="get" action="{baseUrl}/search" autocomplete="off">
-              <label class="search-form-label" for="search-label">
-                <i class="fa fa-search"></i>
-              </label>
-              <input class="search-form-field" type="text" name="query" value="{products.queryString}" placeholder="Search for" />
-              <input type="hidden" name="page" value="1"/>
-              <input type="hidden" name="sort" value="{products.activeSort}"/>
-              <div id="suggested-result" class="search-form-suggestions"></div>
-            </form>
-          </div>
-          <div class="search-no-result-hint">
-            <h3>These tips may help:</h3>
-            <ul>
-              <li>Check your search terms for spelling errors.</li>
-              <li>Describe what you are looking for using different words.</li>
-              <li>Try to use more general search terms.</li>
-            </ul>
-            <p>If you still cannot find what you are looking for, do not hesitate to contact us.</p>
-          </div>
+    <section class="category-product-grid">
+    {?products}
+      <ul class="list-category list-grid-2 list-grid-medium-3 list-grid-large-4">
+      {#products}
+        <li>
+          <a href="{href}">
+            <div class="center-image-container">
+              <img class="product-image" src="{image.url}" alt="{title}" />
+            </div>
+            <h2 class="product-title">{title}</h2>
+            <h3 class="product-price">{price}</h3>
+          </a>
+        </li>
+      {/products}
+      </ul>
+    {:else}
+      <div class="search-no-result">
+        <div class="search-no-result-form">
+          <h2 class="search-no-result-form-headline">Your search did not produce any matches.</h2>
+          <form class="search-form" method="get" action="{baseUrl}/search" autocomplete="off">
+            <label class="search-form-label" for="search-label">
+              <i class="fa fa-search"></i>
+            </label>
+            <input class="search-form-field" type="text" name="query" value="{products.queryString}" placeholder="Search for" />
+            <input type="hidden" name="page" value="1"/>
+            <input type="hidden" name="sort" value="{products.activeSort}"/>
+            <div id="suggested-result" class="search-form-suggestions"></div>
+          </form>
         </div>
-        {/products}
+        <div class="search-no-result-hint">
+          <h3>These tips may help:</h3>
+          <ul>
+            <li>Check your search terms for spelling errors.</li>
+            <li>Describe what you are looking for using different words.</li>
+            <li>Try to use more general search terms.</li>
+          </ul>
+          <p>If you still cannot find what you are looking for, do not hesitate to contact us.</p>
         </div>
       </div>
-    </div>
+      {/products}
+    </section>
 
     <div class="product-list-display-bottom">
       <div class="product-list-pagination">
@@ -92,4 +89,5 @@
       </div>
     </div>
   </section>
+
 {/content}

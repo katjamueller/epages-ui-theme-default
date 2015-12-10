@@ -2,12 +2,12 @@
 
 {<content}
 
-  <section class="category">
-    <section classs="category-banner">
+  <section class="category-page">
+    <section classs="category-page-banner">
       {@plugin type="epages.image" id="category"/}
     </section>
 
-    <h1>{category.title}</h1>
+    <h1 class="category-page-headline">{category.title}</h1>
 
     <div class="product-list-display-top">
       <div class="product-list-sorting">
@@ -32,9 +32,9 @@
       </div>
     </div>
 
-    <div class="category-product-grid">
+    <section class="category-product-grid">
     {?products}
-      <ul class="list-category list-unstyled list-grid-2 list-grid-medium-3 list-grid-large-4">
+      <ul class="list-category list-grid-2 list-grid-medium-3 list-grid-large-4">
       {#products}
         <li>
           <a href="{href}">
@@ -45,7 +45,7 @@
             <h3 class="product-price">{price}</h3>
             <div class="product-availability">
               <span class="product-availability-icon {stockLevelClass}-stock-icon"></span>
-              <p class="product-availability-text">{availabilityText}</p>
+              <p class="product-availability-info">{availabilityText}</p>
             </div>
           </a>
         </li>
@@ -57,11 +57,11 @@
         <br/>No Products available
       </h3>
     {/products}
-    </div>
+    </section>
 
     {?category.subCategories}
     <h4>Further categories</h4>
-    <ul class="list-category list-unstyled list-grid-2 list-grid-medium-3 list-grid-large-4">
+    <ul class="list-category list-grid-2 list-grid-medium-3 list-grid-large-4">
       {#category.subCategories}
       <li>
         <a href="{href}">
@@ -71,8 +71,6 @@
       {/category.subCategories}
     </ul>
     {/category.subCategories}
-
-    {@plugin type="epages.text" id="category-description"/}
 
     <div class="product-list-display-bottom">
       <div class="product-list-pagination">

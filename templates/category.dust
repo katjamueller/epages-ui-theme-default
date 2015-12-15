@@ -32,6 +32,34 @@
       </div>
     </div>
 
+	  {!Dropdown Styled START!}
+    <div class="product-list-display-top">
+      <div class="sorter">
+        <label>Sort By:</label>
+        <ul id="target" class="dropdown">
+          <li class="active"><span class="name">Label name</span>
+            <ul>
+						  {#products.sorts}
+                <li {?active}class="active"{/active}>
+                  <a href="#"><span {?active}class="name"{/active}>{label}</span></a>
+                </li>
+						  {/products.sorts}
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="product-list-pagination">
+			  {#products.pages}
+				  {?previous.enabled}<a href="{previous.query}"><span class="fa fa-angle-left"></span></a>{/previous.enabled}
+				  {#list}
+              <a href="{query}" {?active}class="product-list-pagination-current"{/active}>{number}</a>
+				  {/list}
+				  {?next.enabled}<a href="{next.query}"><span class="fa fa-angle-right"></span></a>{/next.enabled}
+			  {/products.pages}
+      </div>
+    </div>
+	  {!Dropdown Styled END!}
+
     <section class="category-product-grid">
     {?products}
       <ul class="list-category list-grid-2 list-grid-medium-3 list-grid-large-4">

@@ -20,7 +20,7 @@
 .product-list-display-top,
 .product-list-display-bottom {
   margin: 0 0 4em 0;
-  padding: 12px @base-padding;
+  padding: @base-padding;
   background-color: @paging-background-color;
   .clearfix();
 }
@@ -29,6 +29,7 @@
 .product-list-pagination {
   display: inline-block;
   float: right;
+  font-size: 16px;
 
   & a {
     padding: 5px;
@@ -48,10 +49,36 @@
 .product-list-sorting {
   float: left;
   display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
 
   &-items {
     display: inline-block;
     margin-left: 10px;
+
+    /* reset */
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      border-radius: 0;
+      font-size: 1em;
+    }
+
+    /* styling */
+    select {
+      padding: 5px 10px 0 30px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      background: url(../img/select-arrow.png) no-repeat 10px 50% transparent;
+    }
+
+    select:hover {
+      background-color:white;
+    }
   }
 }
 
